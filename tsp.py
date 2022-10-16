@@ -6,7 +6,6 @@ import math
 import numpy as np
 import timeit
 
-"""Have a good break!"""
 
 class Edge:
     def __init__(self, edge: list, distance: int):
@@ -70,8 +69,7 @@ def toFile(node_no, travel_route, min_distance, outFile):
     return totalCost, fastestRoute
 
 
-# This function isn't all mine. I had most the pieces but I couldn't figure out how to put it together by myself so
-# I asked friends, reddit, discord, etc for help!
+# I couldn't have finished this function without the help of the Discord who suggested I use numpy to solve my list problems
 def nearestNeighbor(matrix, outFile):
     """Nearest Neighbor algorithm picks the least expensive edge and goes to it as long as it doesn't complete the circuit
     without going to all vertices."""
